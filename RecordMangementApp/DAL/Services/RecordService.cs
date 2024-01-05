@@ -18,9 +18,9 @@ namespace RecordManagementApp.DAL.Services
             _repository = repository;
         }
 
-        public Task<Record> CreateRecord(Record expense)
+        public Task<Record> CreateRecord(Record record)
         {
-            return _repository.CreateRecord(expense);
+            return _repository.CreateRecord(record);
         }
 
         public Task<bool> DeleteRecordById(long id)

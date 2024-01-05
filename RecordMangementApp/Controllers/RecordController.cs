@@ -55,8 +55,8 @@ namespace RecordManagementApp.Controllers
         [Route("api/Record/GetRecordById")]
         public async Task<IHttpActionResult> GetRecordById(long id)
         {
-            var expense = await _service.GetRecordById(id);
-            return Ok(expense);
+            var record = await _service.GetRecordById(id);
+            return Ok(record);
         }
 
 

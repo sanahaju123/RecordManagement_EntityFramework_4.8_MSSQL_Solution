@@ -10,7 +10,7 @@ namespace RecordManagementApp.DAL.Services.Repository
     public interface IRecordRepository
     {
         List<Record> GetAllRecords();
-        Task<Record> CreateRecord(Record expense);
+        Task<Record> CreateRecord(Record record);
         Task<Record> GetRecordById(long id);
         Task<bool> DeleteRecordById(long id);
         Task<Record> UpdateRecord(Record model);

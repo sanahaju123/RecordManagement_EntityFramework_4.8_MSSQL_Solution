@@ -16,13 +16,13 @@ namespace RecordManagementApp.DAL.Services.Repository
         }
 
 
-        public async Task<Record> CreateRecord(Record expense)
+        public async Task<Record> CreateRecord(Record record)
         {
             try
             {
-                var result =  _dbContext.Records.Add(expense);
+                var result =  _dbContext.Records.Add(record);
                 await _dbContext.SaveChangesAsync();
-                return expense;
+                return record;
             }
             catch (Exception ex)
             {
